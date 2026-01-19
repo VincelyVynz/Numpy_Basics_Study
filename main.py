@@ -1,11 +1,43 @@
 import numpy as np
 
+# Numpy random
+
+rng = np.random.default_rng()
+
+print(rng.integers(1,51, (3,2)))
+
+print(np.random.uniform())
+
+# ages = np.array([
+#     [21, 17, 19, 20, 16, 30, 18, 65],
+#     [39, 22, 15, 99, 18, 19, 20, 21]
+# ])
+#
+# #Filters using where
+#
+# adults = np.where(ages>= 18, ages, 'Minor')
+#print(adults)
+
+# Filters
+
+# teenagers = ages[ages < 18]
+# adults = ages[(ages >= 18) & (ages < 65)]
+# seniors = ages[ages >= 65]
+# evens = ages[ages % 2 == 0]
+# odds  = ages[ages % 2 != 0]
+#
+# print(teenagers)
+# print(adults)
+# print(seniors)
+# print(evens)
+# print(odds)
+
 # Aggregate Functions
-
-arr_1 = np.array([[1,2,3,4,5],
-                  [6,7,8,9,10]])
-
-print(np.sum(arr_1))
+#
+# arr_1 = np.array([[1,2,3,4,5],
+#                   [6,7,8,9,10]])
+#
+# print(np.sum(arr_1))
 
 # Broadcasting
 
