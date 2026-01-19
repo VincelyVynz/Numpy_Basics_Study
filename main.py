@@ -19,7 +19,7 @@ print(np.sum(arr_1))
 # print()
 # print(array1 * array2)
 
-# Comparision Operators
+# Comparison Operators
 
 # scores = np.array([92, 81, 68, 100, 55])
 #
