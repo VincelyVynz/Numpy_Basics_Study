@@ -17,6 +17,11 @@ std_per_sensor = np.std(arr, axis = 0)
 
 normalized_arr = (arr - mean_per_sensor)/std_per_sensor
 
+mean_normalized_arr = np.mean(normalized_arr, axis=0)
+std_normalized_arr = np.std(normalized_arr, axis=0)
+
+print(f"Mean per sensor column, {mean_normalized_arr}")
+print(f"Std per sensor column, {std_normalized_arr}")
 print(f"Mean per sensor is {mean_per_sensor}")
 print(f"Std per sensor is {std_per_sensor}")
 print(f"Normalized array per sensor is {normalized_arr}")
